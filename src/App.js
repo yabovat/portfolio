@@ -6,9 +6,9 @@ import htmlLogo from './Logos/html.svg';
 import javaLogo from './Logos/java.svg';
 import jsLogo from './Logos/javascript.svg';
 import pythonLogo from './Logos/python.svg';
-import linkedinLogo from './Logos/linkedin.svg'; // Add this line
-import githubLogo from './Logos/github.svg'; // Add this line
-import emailLogo from './Logos/email.svg';  // Add this line
+import linkedinLogo from './Logos/linkedin.svg';
+import githubLogo from './Logos/github.svg';
+import emailLogo from './Logos/email.svg';
 import shareIcon from './Logos/share.svg';
 
 
