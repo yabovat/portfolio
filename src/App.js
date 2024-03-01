@@ -6,23 +6,25 @@ import htmlLogo from './Logos/html.svg';
 import javaLogo from './Logos/java.svg';
 import jsLogo from './Logos/javascript.svg';
 import pythonLogo from './Logos/python.svg';
+import linkedinLogo from './Logos/linkedin.svg'; // Add this line
+import githubLogo from './Logos/github.svg'; // Add this line
+import emailLogo from './Logos/email.svg';  // Add this line
+import shareIcon from './Logos/share.svg';
+
 
 function App() {
   return (
     <div className="app">
-      {/* Dynamic Background */}
       <div className="dynamic-background"></div>
 
       <header>
         <h1>Yahya Abovat</h1>
-        <div className="header-links">
-          <a href="http://linkedin.com/in/yabovat" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://github.com/yabovat" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://drive.google.com/file/d/1eS5kh3xEadvVrDAJG4aj_Y4KUhq5N69Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
-          <a href="mailto:yabovat@ucf.edu">Email</a>
+        <div className="tech-logos">
+        <a href="http://linkedin.com/in/yabovat" target="_blank" rel="noopener noreferrer"><img src={linkedinLogo} alt="LinkedIn" width="10" height="10"/></a>
+        <a href="https://github.com/yabovat" target="_blank" rel="noopener noreferrer"><img src={githubLogo} alt="GitHub" /></a>
+        <a href="mailto:yabovat@ucf.edu" target="_blank" rel="noopener noreferrer"><img src={emailLogo} alt="Email" /></a>
         </div>
       </header>
-
 
       <section  id="about-me">
       <h2>About Me</h2>
@@ -41,11 +43,12 @@ function App() {
         <p>
           My journey in web development has equipped me with the ability to work across various technologies, ensuring a holistic approach to project development.
         </p>
-
+        <div className="view-resume">
+          <a href="https://drive.google.com/file/d/1eS5kh3xEadvVrDAJG4aj_Y4KUhq5N69Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            View Full Resume <img src={shareIcon} alt="Share Icon" className="share-icon" />
+          </a>
+        </div>
       </div>
-
-
-
       </section>
 
       <section id="education">

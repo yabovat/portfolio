@@ -13,7 +13,7 @@ body {
   z-index: -1;
   animation: dynamicBackgroundAnimation 30s infinite linear;
   background: linear-gradient(-45deg, #e52e71, #1e90ff, #ccc4c4);
-  background-size: 400% 400%; /* Increase the background size for a more noticeable effect */
+  background-size: 400% 400%;
 }
 
 @keyframes dynamicBackgroundAnimation {
@@ -28,9 +28,6 @@ body {
   }
 }
 
-/* Rest of your CSS remains unchanged */
-
-
 .app {
   text-align: center;
 }
@@ -39,7 +36,8 @@ header {
   background-color: #33333318;
   color: #fff;
   padding: 1em;
-  margin-bottom: 20px; /* Add margin to the bottom of the header */
+  margin-bottom: 1px;
+  line-height: 0.5;
 }
 
 section {
@@ -51,7 +49,7 @@ h2 {
 }
 
 .header-links {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .header-links a {
@@ -63,12 +61,12 @@ h2 {
 }
 
 .header-links a:hover {
-  color: #6caff7; /* Change to your preferred hover color */
+  color: #6caff7;
 }
 
 .about-me {
-  max-width: 600px; /* Set the maximum width as per your preference */
-  margin: 0 auto; /* Center the about me block */
+  max-width: 600px;
+  margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -77,9 +75,36 @@ h2 {
   margin-bottom: 20px;
 }
 
+.view-resume {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.view-resume a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #333b5f80;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.share-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 9px;
+}
+
+.button-text {
+  font-size: 14px;
+}
+
 .project {
-  max-width: 600px; /* Set the maximum width as per your preference */
-  margin: 0 auto; /* Center the project block */
+  max-width: 600px;
+  margin: 0 auto;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 20px;
@@ -91,6 +116,7 @@ h2 {
 }
 .project:hover {
   transform: translateY(-5px);
+  background-color: #ffffffa2;
 }
 
 .project h3 {
@@ -109,23 +135,37 @@ h2 {
 }
 
 .project ul {
-  margin: 30; /* Remove default margin */
-  padding: 30; /* Remove default padding */
+  margin: 30;
+  padding: 30;
 }
 
 .project li {
-  margin-bottom: 10px; /* Adjust the margin between list items */
+  margin-bottom: 10px;
 }
+
 .tech-logos {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 .tech-logos img {
-  width: 50px; /* Adjust the size as needed */
+  width: 50px;
+  height: 40px;
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .tech-logos {
+    flex-wrap: wrap;
+  }
+
+  .tech-logos img {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
 }
 
 footer {
