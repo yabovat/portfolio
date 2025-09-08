@@ -45,7 +45,7 @@ function App() {
           My journey in web development has equipped me with the ability to work across various technologies, ensuring a holistic approach to project development.
         </p>
         <div className="view-resume">
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href="portfolio/resume.pdf" target="_blank" rel="noopener noreferrer">
             View Full Resume <img src={shareIcon} alt="Share Icon" className="share-icon" />
           </a>
         </div>
