@@ -75,6 +75,12 @@ h2 {
   margin-bottom: 20px;
 }
 
+.notice {
+  background-color: rgba(0, 0, 0, 0.425);
+  color: white;
+  padding: 15px;
+}
+
 .view-resume {
   margin-top: 20px;
   text-align: center;

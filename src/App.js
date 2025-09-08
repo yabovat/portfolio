@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="app">
       <div className="dynamic-background"></div>
+        <div className='notice'> ⓘ NEW SITE COMING SOON!</div>
 
       <header>
         <h1>Yahya Abovat</h1>
@@ -44,7 +45,7 @@ function App() {
           My journey in web development has equipped me with the ability to work across various technologies, ensuring a holistic approach to project development.
         </p>
         <div className="view-resume">
-          <a href="https://drive.google.com/file/d/1eS5kh3xEadvVrDAJG4aj_Y4KUhq5N69Y/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             View Full Resume <img src={shareIcon} alt="Share Icon" className="share-icon" />
           </a>
         </div>
