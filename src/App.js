@@ -11,7 +11,6 @@ import githubLogo from './Logos/github.svg';
 import emailLogo from './Logos/email.svg';
 import shareIcon from './Logos/share.svg';
 
-
 function App() {
   return (
     <div className="app">
@@ -45,7 +44,7 @@ function App() {
           My journey in web development has equipped me with the ability to work across various technologies, ensuring a holistic approach to project development.
         </p>
         <div className="view-resume">
-          <a href="portfolio/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer">
             View Full Resume <img src={shareIcon} alt="Share Icon" className="share-icon" />
           </a>
         </div>
